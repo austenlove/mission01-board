@@ -175,30 +175,6 @@ public class PostControllerTests {
                 .andDo(print());
     }
 
-//    @Test
-//    @DisplayName("게시글 전체목록 조회 기능 테스트2")
-//    void read_all_posts_test2() throws Exception {
-//        // given
-//        int page = 0;
-//        int size = 5;
-//        PageRequest pageRequest = PageRequest.of(page, size);
-//        ReadPostResponse response = new ReadPostResponse(1L, "테스트 제목", "테스트 내용");
-//
-//        List<ReadPostResponse> responses = new ArrayList<>();
-//        responses.add(response);
-//
-//        Page<ReadPostResponse> pageResponse = new PageImpl<>(responses, pageRequest, responses.size());
-//
-//        given(postService.readAllPost(any())).willReturn(pageResponse);
-//
-//        // when & then
-//        mockMvc.perform(get("/api/v1/posts"))
-//                .andExpect(status().isOk())
-//                .andExpect(jsonPath("$.content[0].postId").value(1L))
-//                .andExpect(jsonPath("$.content[0].title").value("테스트 제목1"))
-//                .andExpect(jsonPath("$.content[0].content").value("테스트 내용1"))
-//                .andDo(print());
-//    }
 
 }
 
